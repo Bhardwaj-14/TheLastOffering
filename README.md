@@ -16,3 +16,5 @@ On 4th oct we forgot to commit these changes
 * Act 3(Parkour maps etc.) [Last Level]
 
 # AI Used
+* To Understand how to use Godot
+* For getting a bit of help while doing the bossfight in Act3
