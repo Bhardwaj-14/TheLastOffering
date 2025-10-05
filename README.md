@@ -1,4 +1,6 @@
 # TheLastOffering
+<img width="559" height="559" alt="image" src="https://github.com/user-attachments/assets/d67fceed-6ab5-466b-85bc-999e1bd0d4bd" />
+
 The Last Offering is an action-adventure 2D game that combines intense combat, strategic resource management, and a gripping sci-fi storyline. Players take on the role of Maverick, a retired but highly skilled astronaut and combat expert, who is called back into action when Earth faces an unprecedented threat.
 
 After receiving a distress call from Rooster, a NASA operative, Maverick learns of a powerful demon threatening the planet and humanity. To stop it, he must travel to the mysterious Sanctrum, an abandoned and hostile planet.
