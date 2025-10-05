@@ -1,12 +1,11 @@
 # TheLastOffering
 A narrative-driven pixel-art game about love, friendship, and impossible choices. Guide the hero through puzzles, combat, and branching storylines to rescue your lover—or protect your friends. Every choice matters, and every sacrifice leaves a mark.
 
-# Notes
-
 
 # Resources Used
 * CraftPix
 * Itch.io
+* Youtube Tutorials(A lot. Literally, a LOT!)
 
 
 # Not Commited
@@ -18,3 +17,5 @@ On 4th oct we forgot to commit these changes
 # AI Used
 * To Understand how to use Godot
 * For getting a bit of help while doing the bossfight in Act3
+* Simple debugging
+* Main Menu background
