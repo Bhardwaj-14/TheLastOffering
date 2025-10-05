@@ -1,6 +1,7 @@
-[gd_scene load_steps=64 format=3 uid="uid://mprkh8m14okc"]
+[gd_scene load_steps=65 format=3 uid="uid://mprkh8m14okc"]
 
 [ext_resource type="Texture2D" uid="uid://dvxdscam1eq7w" path="res://assets/boss_demon/spritesheets/demon_slime_FREE_v1.0_288x160_spritesheet.png" id="1_dlmty"]
+[ext_resource type="Script" uid="uid://dnkqaegox5xud" path="res://scenes/boss.gd" id="1_neq0i"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e1j6l"]
 atlas = ExtResource("1_dlmty")
@@ -245,28 +246,28 @@ region = Rect2(3168, 160, 288, 160)
 [sub_resource type="SpriteFrames" id="SpriteFrames_neq0i"]
 animations = [{
 "frames": [{
-"duration": 1.0,
+"duration": 0.51,
 "texture": SubResource("AtlasTexture_e1j6l")
 }, {
-"duration": 1.0,
+"duration": 0.51,
 "texture": SubResource("AtlasTexture_qouja")
 }, {
-"duration": 1.0,
+"duration": 0.51,
 "texture": SubResource("AtlasTexture_wljb1")
 }, {
-"duration": 1.0,
+"duration": 0.51,
 "texture": SubResource("AtlasTexture_v2yb1")
 }, {
-"duration": 1.0,
+"duration": 0.51,
 "texture": SubResource("AtlasTexture_js0lu")
 }, {
-"duration": 1.0,
+"duration": 0.41,
 "texture": SubResource("AtlasTexture_gxtfn")
 }, {
-"duration": 1.0,
+"duration": 0.41,
 "texture": SubResource("AtlasTexture_twgab")
 }, {
-"duration": 1.0,
+"duration": 0.51,
 "texture": SubResource("AtlasTexture_02fa5")
 }, {
 "duration": 1.0,
@@ -361,7 +362,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_l6q63")
 }],
-"loop": true,
+"loop": false,
 "name": &"dead",
 "speed": 7.0
 }, {
@@ -451,17 +452,19 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jncid"]
-size = Vector2(76.23526, 87.353775)
+size = Vector2(38.964664, 87.353775)
 
 [node name="Boss" type="CharacterBody2D"]
+script = ExtResource("1_neq0i")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.5902784, 0.56093746)
 sprite_frames = SubResource("SpriteFrames_neq0i")
-animation = &"idle"
+animation = &"attack"
 autoplay = "idle"
+frame_progress = 0.8792966
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 20)
+position = Vector2(1.5000002, 20)
 scale = Vector2(0.5902784, 0.56093746)
 shape = SubResource("RectangleShape2D_jncid")
