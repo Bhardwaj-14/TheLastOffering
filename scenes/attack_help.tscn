@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://jb4r1btl20ux"]
+
+[node name="attack help" type="TextEdit"]
+offset_right = 8.0
+offset_bottom = 8.0

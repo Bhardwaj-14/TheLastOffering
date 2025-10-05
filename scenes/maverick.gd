@@ -19,13 +19,15 @@ func _physics_process(delta: float) -> void:
 	
 	move_and_slide()
 	
-	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
+	var is_attacking = anim.animation == "attack" and anim.is_playing()
+	
+	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and not is_attacking:
 		anim.play("attack")
-	elif not is_on_floor():
+	elif not is_on_floor() and not is_attacking:
 		anim.play("jump")
-	elif input_vector.x != 0:
+	elif input_vector.x != 0 and not is_attacking:
 		anim.play("run")
-	else:
+	elif not is_attacking:
 		anim.play("idle")
 	
 	if input_vector.x != 0:
