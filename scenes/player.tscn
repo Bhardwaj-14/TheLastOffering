@@ -455,7 +455,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fjrip"]
-size = Vector2(29, 42.5)
+size = Vector2(23, 42.5)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_smehm"]
 radius = 6.0
@@ -472,11 +472,11 @@ sprite_frames = SubResource("SpriteFrames_tuyoq")
 animation = &"attack"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-5.5, 3.75)
+position = Vector2(-8.5, 3.75)
 shape = SubResource("RectangleShape2D_fjrip")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(5, -16)
+position = Vector2(-6, -20)
 shape = SubResource("CircleShape2D_smehm")
 
 [node name="Camera2D" type="Camera2D" parent="."]
