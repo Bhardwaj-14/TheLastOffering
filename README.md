@@ -10,3 +10,4 @@ A narrative-driven pixel-art game about love, friendship, and impossible choices
 On 4th oct we forgot to commit these changes
 * Main Menu
 * Act 1(Basic character and background was added)
+* Act 4(Parkour maps etc.)
