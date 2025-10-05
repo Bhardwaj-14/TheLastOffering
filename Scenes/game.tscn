@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://tu0qaeomgfj1"]
+[gd_scene load_steps=55 format=3 uid="uid://tu0qaeomgfj1"]
 
 [ext_resource type="PackedScene" uid="uid://dmf6j1o8ktdoi" path="res://scenes/player.tscn" id="1_lnu2h"]
 [ext_resource type="Script" uid="uid://bfsd04o43uerd" path="res://player.gd" id="2_lbhrr"]
@@ -23,6 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://b3p0pmtfilkpu" path="res://assets/GraysSpaceTiles/Objects (Natural)/Constellation2.png" id="14_bhx41"]
 [ext_resource type="Texture2D" uid="uid://7gjhcq0sdw2n" path="res://assets/GraysSpaceTiles/Suns/Sun1.png" id="15_qnb83"]
 [ext_resource type="Texture2D" uid="uid://ddkppta8ub0r7" path="res://assets/GraysSpaceTiles/Suns/Sun2.png" id="16_sww3w"]
+[ext_resource type="Texture2D" uid="uid://dvxdscam1eq7w" path="res://assets/boss_demon/spritesheets/demon_slime_FREE_v1.0_288x160_spritesheet.png" id="24_e1j6l"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p57ef"]
 texture = ExtResource("3_iywne")
@@ -707,6 +708,56 @@ _data = {
 &"moveing": SubResource("Animation_iywne")
 }
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_pl11u"]
+atlas = ExtResource("24_e1j6l")
+region = Rect2(0, 0, 288, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bhx41"]
+atlas = ExtResource("24_e1j6l")
+region = Rect2(288, 0, 288, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qnb83"]
+atlas = ExtResource("24_e1j6l")
+region = Rect2(576, 0, 288, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sww3w"]
+atlas = ExtResource("24_e1j6l")
+region = Rect2(864, 0, 288, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_suyxu"]
+atlas = ExtResource("24_e1j6l")
+region = Rect2(1152, 0, 288, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sgl2t"]
+atlas = ExtResource("24_e1j6l")
+region = Rect2(1440, 0, 288, 160)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qouja"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pl11u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bhx41")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qnb83")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sww3w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_suyxu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sgl2t")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
+
 [node name="ACT_3" type="Node2D"]
 
 [node name="player" parent="." instance=ExtResource("1_lnu2h")]
@@ -736,3 +787,13 @@ position = Vector2(1030, -44)
 
 [node name="door2" parent="." instance=ExtResource("7_u5sy4")]
 position = Vector2(60, 128)
+
+[node name="Boss" type="CharacterBody2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Boss"]
+position = Vector2(998.00006, -61.25)
+scale = Vector2(0.6041671, 0.5593749)
+sprite_frames = SubResource("SpriteFrames_qouja")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.044326928
