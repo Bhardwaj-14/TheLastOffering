@@ -1,4 +1,4 @@
-[gd_scene load_steps=109 format=3 uid="uid://tu0qaeomgfj1"]
+[gd_scene load_steps=110 format=3 uid="uid://tu0qaeomgfj1"]
 
 [ext_resource type="PackedScene" uid="uid://dmf6j1o8ktdoi" path="res://scenes/player.tscn" id="1_lnu2h"]
 [ext_resource type="Script" uid="uid://bfsd04o43uerd" path="res://player.gd" id="2_lbhrr"]
@@ -1156,6 +1156,9 @@ animations = [{
 "speed": 12.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e1j6l"]
+size = Vector2(64.37634, 80.222855)
+
 [node name="ACT_3" type="Node2D"]
 
 [node name="player" parent="." instance=ExtResource("1_lnu2h")]
@@ -1194,4 +1197,9 @@ scale = Vector2(0.5902784, 0.56093746)
 sprite_frames = SubResource("SpriteFrames_qouja")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.17071667
+frame_progress = 0.72702837
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boss"]
+position = Vector2(970, -41.5)
+scale = Vector2(0.5902784, 0.56093746)
+shape = SubResource("RectangleShape2D_e1j6l")
