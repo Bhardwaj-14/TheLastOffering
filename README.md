@@ -7,6 +7,12 @@ On Sanctrum, Maverick faces his toughest challenge yet: to defeat the demon lord
 
 The game ends with a bittersweet victory: Maverick defeats the demon, saving Earth, but is stranded on Sanctrum, setting the stage for potential sequels or alternate storylines.
 
+# Genre
+
+Action-Adventure
+Sci-Fi / Space Exploration
+Strategy / Resource Management Elements
+
 # Resources Used
 * CraftPix
 * Itch.io
